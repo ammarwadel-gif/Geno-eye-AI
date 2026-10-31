@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Geno-Eye student research project exploring retinal imaging, genomics and AI for autism research."><title>Interactive Demo | Geno-Eye</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div class="wrap nav">
+<a class="brand" href="index.html"><span class="brand-mark">◎</span><span>Geno-Eye<small>THE EYE IS A WINDOW TO THE GENOME</small></span></a>
+<button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+<nav class="navlinks" aria-label="Main navigation">
+<a href="index.html">Home</a><a href="science.html">The Science</a><a href="technology.html">AI Technology</a><a href="demo.html">Interactive Demo</a><a href="research.html">Research & Impact</a><a href="team.html">Our Team</a>
+</nav></div></header>
+<main><section class="page-hero"><div class="wrap"><div class="eyebrow">Interface prototype</div><h1>Interactive Demo</h1><p>Explore the proposed workflow interface. This demonstration previews a selected image locally; it does not perform medical analysis.</p></div></section><div class="wrap content">
+<div class="demo-box"><div class="two-col">
+<div><div class="upload-area"><div style="font-size:2rem">⇧</div><b>Choose a retinal image</b><p style="color:var(--muted);font-size:.88rem">Select an image file from your device. The preview stays in this browser session.</p><input id="retinaFile" type="file" accept="image/*"><img id="imagePreview" class="preview" alt="Selected retinal image preview"></div></div>
+<div><div class="field"><label for="geneSelect">Research gene of interest</label><select id="geneSelect"><option>SHANK3</option><option>MECP2</option><option>CHD8</option><option>Other / not specified</option></select></div><div class="field"><label for="dataType">Image data type</label><select id="dataType"><option>Fundus photograph</option><option>OCT image</option><option>Other retinal image</option></select></div><button class="btn primary" id="demoAnalyze" type="button">Check prototype workflow</button><div class="status" id="demoStatus" role="status">No image selected. Upload an image to preview it.</div></div>
+</div><div class="notice">This is a user-interface prototype only. It does not contain a trained AI model, does not identify genetic variants, and does not calculate autism risk. Do not upload identifiable patient information.</div></div>
+</div></main>
+<footer><div class="wrap footer-inner"><span>© 2026 Geno-Eye Research Project · Student research prototype</span><span class="footer-links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="team.html">Our Team</a></span></div></footer><script src="script.js"></script>
+</body></html>
